@@ -1,4 +1,4 @@
 .env
-*.pickle
-*.gexf
-graphs/
+data/
+**/.DS_Store
+__pycache__/
