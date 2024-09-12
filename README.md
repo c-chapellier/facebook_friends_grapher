@@ -3,7 +3,7 @@
 
 Tool for visualizing your Facebook network.
 
-![example-1](examples/example_1.png)
+<img src="examples/example_1.png" width="400" height="400">
 
 A node represents one of your friend.
 
