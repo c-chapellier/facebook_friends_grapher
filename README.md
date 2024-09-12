@@ -71,15 +71,15 @@ This tool will launch a small web server that will display a 3d interactive visu
 python 3d/server.py <gexf file>
 ```
 
-https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/3d_recording.mov
+https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/3d_recording.mp4
 
-https://user-images.githubusercontent.com/6877923/123006036-64e2e780-d3b7-11eb-922e-018994b32da5.mov
+https://user-images.githubusercontent.com/6877923/123006036-64e2e780-d3b7-11eb-922e-018994b32da5.mp4
 
-[![Watch the video](ok)](https://raw.githubusercontent.com/c-chapellier/facebook_friends_grapher/main/assets/3d_recording.mov)
+[![Watch the video](ok)](https://raw.githubusercontent.com/c-chapellier/facebook_friends_grapher/main/assets/3d_recording.mp4)
 
-[![Watch the video](ok)](https://raw.githubusercontent.com/c-chapellier/facebook_friends_grapher/main/examples/3d_recording.mov)
+[![Watch the video](ok)](https://raw.githubusercontent.com/c-chapellier/facebook_friends_grapher/main/examples/3d_recording.mp4)
 
-[![Watch the video](ok)](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/3d_recording.mov)
+[![Watch the video](ok)](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/3d_recording.mp4)
 
 ## References
 - https://www.databentobox.com/2019/07/28/facebook-friend-graph/
