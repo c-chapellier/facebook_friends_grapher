@@ -73,6 +73,8 @@ python 3d/server.py <gexf file>
 
 https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/3d_recording.mov
 
+https://user-images.githubusercontent.com/6877923/123006036-64e2e780-d3b7-11eb-922e-018994b32da5.mov
+
 ## References
 - https://www.databentobox.com/2019/07/28/facebook-friend-graph/
 - http://allthingsgraphed.com/2014/08/28/facebook-friends-network/
