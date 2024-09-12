@@ -71,7 +71,7 @@ This tool will launch a small web server that will display a 3d interactive visu
 python 3d/server.py <gexf file>
 ```
 
-https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/examples/3d_recording.mov
+https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/3d_recording.mov
 
 ## References
 - https://www.databentobox.com/2019/07/28/facebook-friend-graph/
