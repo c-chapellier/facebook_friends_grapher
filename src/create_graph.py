@@ -3,18 +3,13 @@ import pickle
 
 import matplotlib.pyplot as plt
 import networkx as nx
-import scipy as sp
 from dotenv import load_dotenv
+
+from lib.profile_url_to_username_or_id import profile_url_to_username_or_id
 
 load_dotenv()
 
 FB_PROFILE_LINK: str = os.getenv('FB_PROFILE_LINK') # type: ignore
-
-# get username or id from the profile link
-def profile_url_to_username_or_id(profile_url):
-    if profile_url.find('profile.php?id=') != -1:
-        return profile_url.split('profile.php?id=')[1]
-    return profile_url.split('facebook.com/')[1]
 
 FB_USERNAME_OR_ID = profile_url_to_username_or_id(FB_PROFILE_LINK)
 

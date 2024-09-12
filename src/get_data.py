@@ -6,6 +6,7 @@ import time
 from dotenv import load_dotenv
 
 from lib.parser import FriendsURLsParser
+from lib.profile_url_to_username_or_id import profile_url_to_username_or_id
 from lib.scraper import FacebookScraper
 
 load_dotenv()
@@ -13,12 +14,6 @@ load_dotenv()
 FB_BOT_USERNAME: str = os.getenv('FB_BOT_USERNAME') # type: ignore
 FB_BOT_PASSWORD: str = os.getenv('FB_BOT_PASSWORD') # type: ignore
 FB_PROFILE_LINK: str = os.getenv('FB_PROFILE_LINK') # type: ignore
-
-# get username or id from the profile link
-def profile_url_to_username_or_id(profile_url):
-    if 'profile.php?id=' in profile_url:
-        return profile_url.split('profile.php?id=')[1]
-    return profile_url.split('facebook.com/')[1]
 
 FB_USERNAME_OR_ID = profile_url_to_username_or_id(FB_PROFILE_LINK)
 

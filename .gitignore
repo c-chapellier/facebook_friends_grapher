@@ -2,3 +2,8 @@
 data/
 **/.DS_Store
 __pycache__/
+
+node_modules
+index.js
+package.json
+package-lock.json
