@@ -1,4 +1,5 @@
 
+import json
 import sys
 
 import community_detection
@@ -25,6 +26,8 @@ def get_data():
     try:
         graph = gexf_to_json.gexf_to_json(sys.argv[1])
         graph = community_detection.community_detection(graph)
+        with open('data.json', 'w') as f:
+            f.write(json.dumps(graph))
         return jsonify(graph)
     
     except Exception as ex:

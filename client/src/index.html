@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Client</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=The+Girl+Next+Door"
+    />
+    <!-- <style>
+    body {margin: 0;}
+  </style> -->
+    <!-- <script src="//unpkg.com/3d-force-graph"></script> -->
+  </head>
+  <body>
+    <app-root></app-root>
+    <!-- <div class="graph-3d" id="graph-3d"></div> -->
+
+    <!-- <script type="importmap">
+      { "imports": { "three": "//unpkg.com/three/build/three.module.js" } }
+    </script>
+    <script type="module">
+      import SpriteText from "//unpkg.com/three-spritetext/dist/three-spritetext.mjs";
+      import graph from "../public/graph-3d.json";
+
+      const data = graph;
+      console.log(data);
+
+      // {'nodes': ['id', 'name'], 'links': ['source', 'target']}
+
+      // cross-link node objects
+      data.links.forEach((link) => {
+        const a = data.nodes[link.source];
+        const b = data.nodes[link.target];
+        !a.neighbors && (a.neighbors = []);
+        !b.neighbors && (b.neighbors = []);
+        a.neighbors.push(b);
+        b.neighbors.push(a);
+
+        !a.links && (a.links = []);
+        !b.links && (b.links = []);
+        a.links.push(link);
+        b.links.push(link);
+      });
+
+      const highlightNodes = new Set();
+      const highlightLinks = new Set();
+      let hoverNode = null;
+
+      const Graph = ForceGraph3D({ controlType: "orbit" })(
+        document.getElementById("graph-3d")
+      )
+        .graphData(data)
+        .nodeAutoColorBy("community")
+        .linkAutoColorBy((link) => {
+          return data.nodes.find((node) => node.id === link.source).community;
+        })
+        .linkOpacity(0.1)
+        .cooldownTime(15000)
+        .nodeThreeObject((node) => {
+          const sprite = new SpriteText(node.name);
+          sprite.material.depthWrite = false; // make sprite background transparent
+          sprite.color = node.color;
+          sprite.textHeight = 8 + (node.val / data.nodes.length) * 64;
+          return sprite;
+        })
+        .enableNodeDrag(false)
+        .linkWidth((link) => (highlightLinks.has(link) ? 4 : 1))
+        .linkDirectionalParticles((link) => (highlightLinks.has(link) ? 4 : 0))
+        .linkDirectionalParticleWidth(4)
+        .onNodeHover((node) => {
+          // no state change
+          if ((!node && !highlightNodes.size) || (node && hoverNode === node))
+            return;
+
+          highlightNodes.clear();
+          highlightLinks.clear();
+          if (node) {
+            highlightNodes.add(node);
+            node.neighbors.forEach((neighbor) => highlightNodes.add(neighbor));
+            node.links.forEach((link) => highlightLinks.add(link));
+          }
+
+          hoverNode = node || null;
+
+          updateHighlight();
+        });
+
+      // setInterval(() => {
+      //     const { nodes, links } = Graph.graphData();
+      //     const id = nodes.length;
+      //     console.log('id:', id);
+      //     console.log(data.links.filter(link => link.source <= id+1 && link.target <= id+1));
+      //     Graph.graphData({
+      //         // get first id + 1 from data
+      //         nodes: data.nodes.slice(0, id + 1),
+      //         links: data.links.filter(link => link.source <= id+1 && link.target <= id+1)
+      //     });
+      // }, 1000);
+
+      // Spread nodes a little wider
+      Graph.d3Force("charge").strength(-400);
+
+      function updateHighlight() {
+        // trigger update of highlighted objects in scene
+        Graph.nodeColor(Graph.nodeColor())
+          .linkWidth(Graph.linkWidth())
+          .linkDirectionalParticles(Graph.linkDirectionalParticles());
+      }
+    </script> -->
+  </body>
+</html>

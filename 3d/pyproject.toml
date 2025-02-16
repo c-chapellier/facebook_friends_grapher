@@ -1,0 +1,15 @@
+[project]
+name = "3d"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Corentin Chapellier", email = "corentin.chapellier@gmail.com"},
+]
+dependencies = ["networkx>=3.4.2", "community-detection>=0.0.14", "flask>=3.1.0", "community-detection>=0.0.14", "flask-cors>=5.0.0"]
+requires-python = "==3.13.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
