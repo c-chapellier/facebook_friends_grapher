@@ -1,0 +1,28 @@
+
+<div class="nav">
+  <div class="links">
+    <h3 (click)="navClick('/')" class="logo">Graph vizualiser</h3>
+    <h4 (click)="navClick('/usage')">Usage</h4>
+  </div>
+
+  <div class="upload">
+    <input
+      type="file"
+      id="file"
+      (change)="handleFileInput($event)"
+      accept=".gexf"
+      #fileUpload
+    />
+
+    <button
+      mat-mini-fab
+      color="primary"
+      (click)="fileUpload.click()"
+    >
+      <h4 class="upload-button">
+        {{filename() || "Upload your graph (.gexf)"}}
+        <img src="/paperclip.png" alt="image">
+      </h4>
+    </button>
+  </div>
+</div>

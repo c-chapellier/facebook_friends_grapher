@@ -1,0 +1,51 @@
+
+.nav {
+  width: calc(100vw - 2*var(--page-margin-left));
+  height: var(--nav-bar-height);
+  margin-left: var(--page-margin-left);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  input {
+    display: none;
+  }
+
+  button {
+    background-color: white;
+    border: none;
+    margin: 0px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(200, 200, 200);
+    }
+
+    .upload-button {
+      color: black;
+      margin: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      img {
+        height: 1.2rem;
+        margin: 0px;
+        padding: 0px
+      }
+    }
+  }
+}

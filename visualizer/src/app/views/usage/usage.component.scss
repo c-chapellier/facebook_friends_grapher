@@ -1,0 +1,28 @@
+
+.content {
+  margin-left: var(--page-margin-left);
+  width: calc(100vw - 2*var(--page-margin-left));
+  height: calc(100vh);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .preview {
+    width: 420px;
+    height: 594px;
+    background-color: white;
+    border: 10px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    embed {
+      margin: 0px;
+      width: 90%;
+      height: 420px;
+    }
+  }
+}

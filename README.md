@@ -77,3 +77,4 @@ https://github.com/user-attachments/assets/b85ac61a-33c8-43be-950e-9f713d33e87b
 ## References
 - https://www.databentobox.com/2019/07/28/facebook-friend-graph/
 - http://allthingsgraphed.com/2014/08/28/facebook-friends-network/
+- https://github.com/vasturiano/force-graph?tab=readme-ov-file
