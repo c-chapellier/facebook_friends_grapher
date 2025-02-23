@@ -3,7 +3,10 @@
 
 Tool for visualizing your Facebook network.
 
-![Loading Video...](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/demo-visualizer-1080p.mov)
+![](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/demo-gephi.png)
+
+An example video must load here:
+![](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/demo-visualizer-1080p.mov)
 
 A node represents one of your friend.
 
@@ -13,7 +16,7 @@ The size of each friend is proportionnal to the number of mutual friends between
 
 Each color represents one community inside your network (maybe a a city, a sport, a school, a friend group,...).
 
-## Usage
+## Usage: first you need to gather your data
 
 This tool will scrape your Facebook friends and their mutual friends and create a graph document.
 
@@ -42,7 +45,7 @@ Run the following Python script to webscrap your data. It will open a chrome win
 > ***This process can take a while depending on the number of friends you have. If you have 800 friends, it can take up to 12 hours.***
 
 ```bash
-python3 src/get_data.py
+python3 scrapper/get_data.py
 ```
 
 > ***Tip***: You can resize the chrome window to a small size to speed up the process. In order to maximize the number of friends displayed on one page.
@@ -54,7 +57,7 @@ It will store your data in the `data` directory.
 Run the following Python script to create the graph `.gexf` document.
 
 ```bash
-python3 src/create_graph.py
+python3 scrapper/create_graph.py
 ```
 
 ### 4. Visualize the graph
@@ -65,11 +68,8 @@ python3 src/create_graph.py
 
 #### 4.2. Using the 3d rendering tool
 
-This tool will launch a small web server that will display a 3d interactive visualization of your graph.
-
-```bash
-python 3d/server.py <gexf file>
-```
+* Go to https://c-chapellier.github.io/facebook_friends_grapher/
+* Upload your `.gexf` file.
 
 ## References
 - https://www.databentobox.com/2019/07/28/facebook-friend-graph/
