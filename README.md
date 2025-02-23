@@ -3,7 +3,7 @@
 
 Tool for visualizing your Facebook network.
 
-![](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/demo-visualizer-1080p.mov)
+![ok](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/demo-visualizer-1080p.mov)
 
 A node represents one of your friend.
 
