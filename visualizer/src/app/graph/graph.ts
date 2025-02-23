@@ -1,8 +1,8 @@
 import ForceGraph3D, { ForceGraph3DInstance } from '3d-force-graph';
 import { color as d3Color, RGBColor } from 'd3';
+import * as THREE from 'three';
 import { LinkObject, NodeObject } from 'three-forcegraph';
 import SpriteText from 'three-spritetext';
-import * as THREE from '../../../node_modules/@types/three';
 import { hexColors, lightenDarkenColor } from './colors';
 import communityDetectionLouvain from './community-detection-Louvain';
 import { Coords, JsonGraph, Link, Node } from './types';
