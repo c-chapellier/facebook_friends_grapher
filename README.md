@@ -3,8 +3,6 @@
 
 Tool for visualizing your Facebook network.
 
-![](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/demo-gephi.png)
-
 https://github.com/user-attachments/assets/37f570e0-2e9e-467d-9208-c7b2665d5288
 
 A node represents one of your friend.
@@ -64,6 +62,8 @@ python3 scrapper/create_graph.py
 #### 4.1. Using Gephi (2d)
 
 [Gephi](https://gephi.org) is an amazing tool for visualizing 2d graphs. It is very powerful and can create beautiful visualizations.
+
+![](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/demo-gephi.png)
 
 #### 4.2. Using the 3d rendering tool
 
