@@ -3,7 +3,7 @@
 
 Tool for visualizing your Facebook network.
 
-<img src="examples/example_1.png" width="400" height="400">
+![](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/demo-visualizer-1080p.mov)
 
 A node represents one of your friend.
 
@@ -70,9 +70,6 @@ This tool will launch a small web server that will display a 3d interactive visu
 ```bash
 python 3d/server.py <gexf file>
 ```
-
-<!-- 3d rendering video -->
-https://github.com/user-attachments/assets/b85ac61a-33c8-43be-950e-9f713d33e87b
 
 ## References
 - https://www.databentobox.com/2019/07/28/facebook-friend-graph/
