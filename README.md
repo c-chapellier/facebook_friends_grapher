@@ -5,8 +5,7 @@ Tool for visualizing your Facebook network.
 
 ![](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/demo-gephi.png)
 
-An example video must load here:
-![](https://github.com/c-chapellier/facebook_friends_grapher/blob/main/examples/demo-visualizer-1080p.mov)
+https://github.com/user-attachments/assets/37f570e0-2e9e-467d-9208-c7b2665d5288
 
 A node represents one of your friend.
 
