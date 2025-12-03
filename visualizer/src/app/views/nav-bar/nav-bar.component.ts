@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
   selector: 'msg-nav-bar',
   imports: [RouterModule],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+  styleUrl: './nav-bar.component.scss',
 })
 export class NavBarComponent {
   protected onNavClick = output<string>();
@@ -26,9 +26,5 @@ export class NavBarComponent {
         this.onFileInput.emit(file);
       };
     }
-  }
-
-  protected navClick(path: string) {
-    this.onNavClick.emit(path);
   }
 }

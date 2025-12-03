@@ -1,8 +1,13 @@
-
 <div class="nav">
   <div class="links">
-    <h3 (click)="navClick('/')" class="logo">Graph vizualiser</h3>
-    <h4 (click)="navClick('/usage')">Usage</h4>
+    <h3 class="logo">Graph vizualiser</h3>
+    <a
+      href="https://github.com/c-chapellier/facebook_friends_grapher"
+      target="_blank"
+      rel="noopener"
+    >
+      <h4>Usage</h4>
+    </a>
   </div>
 
   <div class="upload">
@@ -14,14 +19,13 @@
       #fileUpload
     />
 
-    <button
-      mat-mini-fab
-      color="primary"
-      (click)="fileUpload.click()"
-    >
+    <button mat-mini-fab color="primary" (click)="fileUpload.click()">
       <h4 class="upload-button">
-        {{filename() || "Upload your graph (.gexf)"}}
-        <img src="https://cdn-icons-png.flaticon.com/512/876/876210.png" alt="image">
+        {{ filename() || "Upload your graph (.gexf)" }}
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/876/876210.png"
+          alt="image"
+        />
       </h4>
     </button>
   </div>

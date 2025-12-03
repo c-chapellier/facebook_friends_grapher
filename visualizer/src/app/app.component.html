@@ -1,19 +1,4 @@
-
 <div class="container">
-
-  <msg-nav-bar
-    (onNavClick)="onNavClick($event)"
-    (onFileInput)="onFileInput($event)"
-  />
-
-  <!-- @if (show_usage()) {
-    <div class="background">
-      <embed src="/graph.svg"/>
-    </div>
-    <div class="white-background"></div>
-    <msg-usage/>
-  } @else { -->
-    <msg-three-d [graphFile]="graphFile()"/>
-  <!-- } -->
-
+  <msg-nav-bar (onFileInput)="onFileInput($event)" />
+  <msg-three-d [graphFile]="graphFile()" />
 </div>
